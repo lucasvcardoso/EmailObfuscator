@@ -1,0 +1,11 @@
+D:\workspace\EmailObfuscator\EmailObfuscator.Tests\bin\Release\EmailObfuscator.Tests.dll
+D:\workspace\EmailObfuscator\EmailObfuscator.Tests\bin\Release\EmailObfuscator.Tests.pdb
+D:\workspace\EmailObfuscator\EmailObfuscator.Tests\bin\Release\nunit.framework.dll
+D:\workspace\EmailObfuscator\EmailObfuscator.Tests\bin\Release\Simple.EmailObfuscator.dll
+D:\workspace\EmailObfuscator\EmailObfuscator.Tests\bin\Release\Simple.EmailObfuscator.pdb
+D:\workspace\EmailObfuscator\EmailObfuscator.Tests\bin\Release\nunit.framework.xml
+D:\workspace\EmailObfuscator\EmailObfuscator.Tests\obj\Release\EmailObfuscator.Tests.csprojResolveAssemblyReference.cache
+D:\workspace\EmailObfuscator\EmailObfuscator.Tests\obj\Release\EmailObfuscator.Tests.csproj.CoreCompileInputs.cache
+D:\workspace\EmailObfuscator\EmailObfuscator.Tests\obj\Release\EmailObfuscator.Tests.csproj.CopyComplete
+D:\workspace\EmailObfuscator\EmailObfuscator.Tests\obj\Release\EmailObfuscator.Tests.dll
+D:\workspace\EmailObfuscator\EmailObfuscator.Tests\obj\Release\EmailObfuscator.Tests.pdb

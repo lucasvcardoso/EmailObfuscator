@@ -1,0 +1,9 @@
+D:\workspace\EmailObfuscator\EmailObfuscatorConsoleApp\bin\Debug\EmailObfuscatorConsoleApp.exe.config
+D:\workspace\EmailObfuscator\EmailObfuscatorConsoleApp\bin\Debug\EmailObfuscatorConsoleApp.exe
+D:\workspace\EmailObfuscator\EmailObfuscatorConsoleApp\bin\Debug\EmailObfuscatorConsoleApp.pdb
+D:\workspace\EmailObfuscator\EmailObfuscatorConsoleApp\bin\Debug\Simple.EmailObfuscator.dll
+D:\workspace\EmailObfuscator\EmailObfuscatorConsoleApp\obj\Debug\EmailObfuscatorConsoleApp.csprojResolveAssemblyReference.cache
+D:\workspace\EmailObfuscator\EmailObfuscatorConsoleApp\obj\Debug\EmailObfuscatorConsoleApp.csproj.CoreCompileInputs.cache
+D:\workspace\EmailObfuscator\EmailObfuscatorConsoleApp\obj\Debug\EmailObfuscatorConsoleApp.csproj.CopyComplete
+D:\workspace\EmailObfuscator\EmailObfuscatorConsoleApp\obj\Debug\EmailObfuscatorConsoleApp.exe
+D:\workspace\EmailObfuscator\EmailObfuscatorConsoleApp\obj\Debug\EmailObfuscatorConsoleApp.pdb

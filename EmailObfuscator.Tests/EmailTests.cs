@@ -11,17 +11,83 @@ namespace EmailObfuscator
     public class EmailTests
     {
         [Test]
-        public void ObfuscateTest()
+        public void Obfuscate()
         {
             //Arrange
             string email = $"name.surname@emailprovider.com";
             string expected = $"*****surname@emailprovider.com";
 
             //Act
-            string obfuscated = Email.Obfuscate(email);
+            string result = Email.Obfuscate(email);
 
             //Assert
-            Assert.AreEqual(expected, obfuscated);
+            Console.WriteLine(result);
+            Assert.AreEqual(expected, result, $"Obfuscation result: {result}");
+        }
+
+        [Test]
+        public void ThrowExceptionWhenEmailIsInvalid()
+        {
+            try
+            {
+                //Arrange
+                string invalidEmail = "emailWithoutAtSymbol.com";
+                //Act
+                Email.Obfuscate(invalidEmail);
+                //Assert
+                Assert.Fail();
+            }
+            catch (Exception ex)
+            {
+                //Assert
+                Assert.Pass(ex.Message);
+                Console.WriteLine(ex.Message);
+            }            
+        }
+
+        [Test]
+        public void ObfuscateWithNumberOfAsteriskLesserThenEmailPrefix()
+        {
+            //Arrange
+            string email = "name.surname@emailprovider.com";
+            string expected = "****.surname@emailprovider.com";
+
+            //Act
+            string result = Email.Obfuscate(email, 4);
+
+            //Assert
+            Assert.AreEqual(expected, result, $"Obfuscation result: {result}");
+            Console.WriteLine(result);
+        }
+
+        [Test]
+        public void ObfuscateWithNumberOfAsteriskGreaterThenEmailPrefix()
+        {
+            //Arrange
+            string email = "name.surname@emailprovider.com";
+            string expected = "************@emailprovider.com";
+
+            //Act
+            string result = Email.Obfuscate(email, 14);
+
+            //Assert
+            Assert.AreEqual(expected, result, $"Obfuscation result: {result}");
+            Console.WriteLine(result);
+        }
+
+        [Test]
+        public void ObfuscatePassingTheSectionToObfuscate()
+        {
+            //Arrange
+            string email = "name.surname@emailprovider.com";
+            string expected = "name.su*****@emailprovider.com";
+
+            //Act
+            string result = Email.Obfuscate(email, section: EmailOptions.ObfuscateEnd);
+
+            //Assert
+            Assert.AreEqual(expected, result, $"Obfuscation result: {result}");
+            Console.WriteLine(result);
         }
     }
 }

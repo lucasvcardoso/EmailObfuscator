@@ -7,5 +7,5 @@ D:\workspace\EmailObfuscator\EmailObfuscator.Tests\obj\Debug\EmailObfuscator.Tes
 D:\workspace\EmailObfuscator\EmailObfuscator.Tests\obj\Debug\EmailObfuscator.Tests.csproj.CopyComplete
 D:\workspace\EmailObfuscator\EmailObfuscator.Tests\obj\Debug\EmailObfuscator.Tests.dll
 D:\workspace\EmailObfuscator\EmailObfuscator.Tests\obj\Debug\EmailObfuscator.Tests.pdb
-D:\workspace\EmailObfuscator\EmailObfuscator.Tests\bin\Debug\EmailObfuscator.dll
-D:\workspace\EmailObfuscator\EmailObfuscator.Tests\bin\Debug\EmailObfuscator.pdb
+D:\workspace\EmailObfuscator\EmailObfuscator.Tests\bin\Debug\Simple.EmailObfuscator.dll
+D:\workspace\EmailObfuscator\EmailObfuscator.Tests\bin\Debug\Simple.EmailObfuscator.pdb
