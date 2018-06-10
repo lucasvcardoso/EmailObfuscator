@@ -32,8 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Simple.EmailObfuscator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Simple.EmailObfuscator.1.0.0\lib\net40\Simple.EmailObfuscator.dll</HintPath>
+    <Reference Include="Simple.EmailObfuscator, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Simple.EmailObfuscator.1.1.0\lib\net40\Simple.EmailObfuscator.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
