@@ -4,3 +4,8 @@ D:\workspace\EmailObfuscator\EmailObfuscator\bin\Debug\Simple.EmailObfuscator.dl
 D:\workspace\EmailObfuscator\EmailObfuscator\bin\Debug\Simple.EmailObfuscator.pdb
 D:\workspace\EmailObfuscator\EmailObfuscator\obj\Debug\Simple.EmailObfuscator.dll
 D:\workspace\EmailObfuscator\EmailObfuscator\obj\Debug\Simple.EmailObfuscator.pdb
+C:\workspace\EmailObfuscator\EmailObfuscator\bin\Debug\Simple.EmailObfuscator.dll
+C:\workspace\EmailObfuscator\EmailObfuscator\bin\Debug\Simple.EmailObfuscator.pdb
+C:\workspace\EmailObfuscator\EmailObfuscator\obj\Debug\EmailObfuscator.csproj.CoreCompileInputs.cache
+C:\workspace\EmailObfuscator\EmailObfuscator\obj\Debug\Simple.EmailObfuscator.dll
+C:\workspace\EmailObfuscator\EmailObfuscator\obj\Debug\Simple.EmailObfuscator.pdb

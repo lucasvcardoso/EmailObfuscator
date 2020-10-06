@@ -9,30 +9,58 @@ namespace EmailObfuscator
     {
         const int NUMBER_OF_ASTERISKS = 5;        
 
-        public static string Obfuscate(string emailAddress, int numberOfAsterisks = NUMBER_OF_ASTERISKS, EmailOptions section = EmailOptions.ObfuscateBeggining)
+        public static string Obfuscate(string emailAddress, int numberOfAsterisks = NUMBER_OF_ASTERISKS, EmailOptions section = EmailOptions.ObfuscateBegginingLocalPart)
         {
             string obfuscatedEmail = "";
 
             try
             {
-                string[] parts = emailAddress.Split('@');                
-                int endPosition = parts[0].Length < numberOfAsterisks ? parts[0].Length : numberOfAsterisks;
-                string asterisks = new string('*', endPosition);
-
-                if (section == EmailOptions.ObfuscateBeggining)
+                string[] parts = emailAddress.Split('@');
+                
+                
+                if (section != EmailOptions.ObfuscateDomain)
                 {
-                    string primeiraParte = parts[0].Substring(endPosition);
-                    obfuscatedEmail = $"{asterisks}{primeiraParte}@{parts[1]}";
+                    obfuscatedEmail = ObfuscateLocalPart(section, parts, numberOfAsterisks);
                 }
                 else
                 {
-                    string unbofuscatedSection = parts[0].Substring(0,parts[0].Length-endPosition);
-                    obfuscatedEmail = $"{unbofuscatedSection}{asterisks}@{parts[1]}";
+                    obfuscatedEmail = ObfuscateDomain(section, parts, numberOfAsterisks);
                 }
             }
             catch (Exception)
             {
                 throw new FormatException($"Invalid e-mail format: {emailAddress}"); 
+            }
+
+            return obfuscatedEmail;
+        }
+
+        private static string ObfuscateDomain(EmailOptions section, string[] parts, int numberOfAsterisks)
+        {
+            string obfuscatedEmail;
+            int endPosition = parts[1].Length < numberOfAsterisks ? parts[1].Length : numberOfAsterisks;
+            string asterisks = new string('*', endPosition);
+
+            string domain = parts[1].Substring(endPosition);
+            obfuscatedEmail = $"{parts[0]}@{asterisks}{domain}";
+            return obfuscatedEmail;
+        }
+
+        private static string ObfuscateLocalPart(EmailOptions section, string[] parts, int numberOfAsterisks)
+        {
+            string obfuscatedEmail;
+            int endPosition = parts[0].Length < numberOfAsterisks ? parts[0].Length : numberOfAsterisks;
+            string asterisks = new string('*', endPosition);
+
+            if (section == EmailOptions.ObfuscateBegginingLocalPart)
+            {
+                string localPart = parts[0].Substring(endPosition);
+                obfuscatedEmail = $"{asterisks}{localPart}@{parts[1]}";
+            }
+            else
+            {
+                string unbofuscatedSection = parts[0].Substring(0, parts[0].Length - endPosition);
+                obfuscatedEmail = $"{unbofuscatedSection}{asterisks}@{parts[1]}";
             }
 
             return obfuscatedEmail;
