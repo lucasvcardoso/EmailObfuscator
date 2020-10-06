@@ -7,7 +7,8 @@ namespace EmailObfuscator
 {
     public enum EmailOptions
     {
-        ObfuscateBeggining,
-        ObfuscateEnd
+        ObfuscateBegginingLocalPart,
+        ObfuscateEndLocalPart,
+        ObfuscateDomain
     }
 }

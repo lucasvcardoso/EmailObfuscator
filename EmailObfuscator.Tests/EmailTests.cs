@@ -11,7 +11,7 @@ namespace EmailObfuscator
     public class EmailTests
     {
         [Test]
-        public void Obfuscate()
+        public void ObfuscateLocalPart()
         {
             //Arrange
             string email = $"name.surname@emailprovider.com";
@@ -83,11 +83,26 @@ namespace EmailObfuscator
             string expected = "name.su*****@emailprovider.com";
 
             //Act
-            string result = Email.Obfuscate(email, section: EmailOptions.ObfuscateEnd);
+            string result = Email.Obfuscate(email, section: EmailOptions.ObfuscateEndLocalPart);
 
             //Assert
             Assert.AreEqual(expected, result, $"Obfuscation result: {result}");
             Console.WriteLine(result);
+        }
+
+        [Test]
+        public void ObfuscateDomain()
+        {
+            //Arrange
+            string email = $"name.surname@emailprovider.com";
+            string expected = $"name.surname@*****provider.com";
+
+            //Act
+            string result = Email.Obfuscate(email, section: EmailOptions.ObfuscateDomain);
+
+            //Assert
+            Console.WriteLine(result);
+            Assert.AreEqual(expected, result, $"Obfuscation result: {result}");
         }
     }
 }
