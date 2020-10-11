@@ -1,16 +1,18 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
     <id>$id$</id>
-    <version>$version$</version>
+    <version>1.2.0</version>
     <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
-    <projectUrl>https://github.com/lucasvcardoso/EmailObfuscator</projectUrl>
+    <authors>Lucas Vieira de Oliveira Cardoso</authors>
+    <owners>Lucas Vieira de Oliveira Cardoso</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>Added support to choosing which section of the e-mail address prefix will be obfuscated.</releaseNotes>
-    <copyright>Copyright 2018</copyright>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/lucasvcardoso/EmailObfuscator</projectUrl>
+    <description>A simple e-mail address obfuscator for use with .NET Framework 4+ projects.</description>
+    <summary>A simple e-mail address obfuscator for use with .NET Framework 4+ projects.</summary>
+    <releaseNotes>Implemented obfuscation functionality for the domain part of the email address.</releaseNotes>
+    <copyright>Copyright 2020</copyright>
     <tags>email e-mail address obfuscate obfuscator emailaddress emailhide hide hidden hiddenemail hiddene-mail e-mailhidden e-mailhide</tags>
   </metadata>
 </package>

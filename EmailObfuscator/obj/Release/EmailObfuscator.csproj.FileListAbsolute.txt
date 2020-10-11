@@ -4,3 +4,9 @@ D:\workspace\EmailObfuscator\EmailObfuscator\obj\Release\EmailObfuscator.csprojR
 D:\workspace\EmailObfuscator\EmailObfuscator\obj\Release\EmailObfuscator.csproj.CoreCompileInputs.cache
 D:\workspace\EmailObfuscator\EmailObfuscator\obj\Release\Simple.EmailObfuscator.dll
 D:\workspace\EmailObfuscator\EmailObfuscator\obj\Release\Simple.EmailObfuscator.pdb
+C:\workspace\EmailObfuscator\EmailObfuscator\bin\Release\Simple.EmailObfuscator.dll
+C:\workspace\EmailObfuscator\EmailObfuscator\bin\Release\Simple.EmailObfuscator.pdb
+C:\workspace\EmailObfuscator\EmailObfuscator\obj\Release\EmailObfuscator.csprojAssemblyReference.cache
+C:\workspace\EmailObfuscator\EmailObfuscator\obj\Release\EmailObfuscator.csproj.CoreCompileInputs.cache
+C:\workspace\EmailObfuscator\EmailObfuscator\obj\Release\Simple.EmailObfuscator.dll
+C:\workspace\EmailObfuscator\EmailObfuscator\obj\Release\Simple.EmailObfuscator.pdb
