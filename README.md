@@ -1,4 +1,4 @@
 # EmailObfuscator
-E-mail obfuscator package to use with .NET Framework 4+ projects.
+E-mail obfuscator package to use with .NET projects. Sample usage included in the console application.
 
-# Usage: install-package Simple.EmailObfuscator
+# NuGet usage: install-package Simple.EmailObfuscator
