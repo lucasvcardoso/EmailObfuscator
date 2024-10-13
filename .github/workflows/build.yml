@@ -1,0 +1,27 @@
+name: .NET Build
+
+on: 
+    push:
+    workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+ 
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+    
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+
+    - name: Restore NuGet packages
+      run: nuget restore SimpleRandomizer.sln
+
+    - name: Build solution
+      run: |
+          msbuild --version
+          msbuild SimpleRandomizer.sln /t:"SimpleRandomizer" /p:Configuration=Release
+    

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.35325.158
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailObfuscatorConsoleApp", "EmailObfuscatorConsoleApp\EmailObfuscatorConsoleApp.csproj", "{9F40ED54-1738-4189-811B-978683714BB8}"
 EndProject
@@ -12,9 +12,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailObfuscator.Tests", "EmailObfuscator.Tests\EmailObfuscator.Tests.csproj", "{513603D0-A5C2-4929-B460-A09C2287B39B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailObfuscator.Tests", "EmailObfuscator.Tests\EmailObfuscator.Tests.csproj", "{513603D0-A5C2-4929-B460-A09C2287B39B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailObfuscator.Tests.Legacy", "EmailObfuscator.Tests.Legacy\EmailObfuscator.Tests.Legacy.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{1C45B458-C467-4FF6-BD95-7D20DC297AE3}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build.yml = .github\workflows\build.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{70B26558-1342-432E-A822-AD6E150623EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +48,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1C45B458-C467-4FF6-BD95-7D20DC297AE3} = {70B26558-1342-432E-A822-AD6E150623EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5FBC50B5-2268-4488-BC83-450195D80BB8}
