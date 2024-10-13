@@ -7,7 +7,7 @@ namespace EmailObfuscator
 {
     public class Email
     {
-        const int NUMBER_OF_ASTERISKS = 5;        
+        const int NUMBER_OF_ASTERISKS = 5;
 
         public static string Obfuscate(string emailAddress, int numberOfAsterisks = NUMBER_OF_ASTERISKS, EmailOptions section = EmailOptions.ObfuscateBegginingLocalPart)
         {
@@ -16,8 +16,8 @@ namespace EmailObfuscator
             try
             {
                 string[] parts = emailAddress.Split('@');
-                
-                
+
+
                 if (section != EmailOptions.ObfuscateDomain)
                 {
                     obfuscatedEmail = ObfuscateLocalPart(section, parts, numberOfAsterisks);
@@ -29,7 +29,7 @@ namespace EmailObfuscator
             }
             catch (Exception)
             {
-                throw new FormatException($"Invalid e-mail format: {emailAddress}"); 
+                throw new FormatException($"Invalid e-mail format: {emailAddress}");
             }
 
             return obfuscatedEmail;
