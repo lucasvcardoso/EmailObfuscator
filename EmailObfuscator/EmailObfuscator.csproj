@@ -11,6 +11,7 @@
     <RepositoryUrl>https://github.com/lucasvcardoso/EmailObfuscator</RepositoryUrl>
     <PackageTags>email;e-mail address;obfuscate;obfuscator;emailaddress;emailhide;hide;hidden;hiddenemail;hiddene-mail;e-mailhidden;e-mailhiden</PackageTags>
     <PackageReleaseNotes>Added multi-target support.</PackageReleaseNotes>
+    <PackageId>Simple.EmailObfuscator</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
